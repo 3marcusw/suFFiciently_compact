@@ -1,0 +1,81 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Tab bar adjustments */
+#tabbrowser-tabs,
+#TabsToolbar{
+	background: #414141 !important;
+}
+:root {
+/* decreases tab height (only works in pair with "--toolbarbutton-inner-padding") */
+	--tab-min-height: 24px !important;
+}
+#urlbar,
+#urlbar-wrapper, 
+#nav-bar,
+#urlbar-container,
+.hbox .chromeclass-toolbar-additional {
+	background: black !important;
+}
+/* more compact navigation toolbar */
+#main-window[uidensity=compact] #nav-bar #nav-bar-overflow-button,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem textbox,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
+#main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem,
+#PanelUI-menu-button {
+	margin-top: -4px !important;
+	margin-bottom: -4px !important;
+	padding-top: -4px !important;
+	padding-bottom: -4px !important;
+	max-height: 26px !important;
+}
+
+
+
+
+/* multi row tabs */
+
+#tabbrowser-tabs .tabbrowser-arrowscrollbox,
+#tabbrowser-tabs .arrowscrollbox-scrollbox {
+    display: block;
+}
+
+.scrollbutton-up,
+.arrowscrollbox-overflow-start-indicator,
+.scrollbutton-down,
+.arrowscrollbox-overflow-end-indicator {
+  display: none !important;
+}
+
+#tabbrowser-tabs .arrowscrollbox-scrollbox .scrollbox-innerbox {
+    display: flex;
+    flex-wrap: wrap;
+    /*
+    display: block;
+    */
+    overflow-y: auto !important;
+    min-height: var(--tab-min-height); /* default */
+    max-height: calc(5*var(--tab-min-height)) !important;
+}
+#tabbrowser-tabs .tabbrowser-tab:not([pinned]) {
+    flex-grow: 1;
+    flex-wrap:wrap;
+    min-width: 150px;
+    vertical-align: bottom !important;
+}
+#tabbrowser-tabs .tabbrowser-tab,
+#tabbrowser-tabs .tabbrowser-tab .tab-stack .tab-background {
+    height: var(--tab-min-height);
+}
+
+#tabbrowser-tabs .tabbrowser-tab .tab-stack {
+    width: 100%;
+}
+
+#main-window[tabsintitlebar] #tabbrowser-tabs {
+   -moz-window-dragging: no-drag;
+}
+
+#titlebar-buttonbox {
+ display: block !important;
+ vertical-align: top !important;
+}
