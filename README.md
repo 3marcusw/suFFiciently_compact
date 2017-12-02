@@ -1,5 +1,5 @@
 ## suFFiciently_compact
-#intended for Firefox on Linux. Has multiple tab rows and a sufficiently compact UI. Works with Firefox 57 Quantum.
+intended for Firefox on Linux. Has multiple tab rows and a sufficiently compact UI. Works with Firefox 57 Quantum.
 
 
 Screenshots from Ubuntu Gnome with the Bottom Panel and the Pixel Saver extensions.
