@@ -5,7 +5,7 @@
 	background: #414141 !important;
 }
 :root {
-/* decreases tab height (only works in pair with "--toolbarbutton-inner-padding") */
+/* decreases tab height */
 	--tab-min-height: 24px !important;
 }
 #urlbar,
