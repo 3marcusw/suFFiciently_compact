@@ -5,8 +5,8 @@
 	background: #414141 !important;
 }
 :root {
-/* decreases tab height */
-	--tab-min-height: 24px !important;
+/* decreases tab height (only works in pair with "--toolbarbutton-inner-padding") */
+	--tab-min-height: 21px !important;
 }
 #urlbar,
 #urlbar-wrapper, 
@@ -24,9 +24,9 @@
 #PanelUI-menu-button {
 	margin-top: -4px !important;
 	margin-bottom: -4px !important;
-	padding-top: -4px !important;
-	padding-bottom: -4px !important;
-	max-height: 26px !important;
+	padding-top: -2px !important;
+	padding-bottom: -2px !important;
+	max-height: 28px !important;
 }
 
 
