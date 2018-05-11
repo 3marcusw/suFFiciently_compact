@@ -4,10 +4,10 @@
 #TabsToolbar{
 	background: #414141 !important;
 }
-:root {
-/* decreases tab height (only works in pair with "--toolbarbutton-inner-padding") */
-	--tab-min-height: 21px !important;
+#titlebar, #tabbrowser-tabs {
+    --tab-min-height: 22px !important;
 }
+
 #urlbar,
 #urlbar-wrapper, 
 #nav-bar,
