@@ -5,7 +5,7 @@
 	background: #414141 !important;
 }
 #titlebar, #tabbrowser-tabs {
-    --tab-min-height: 22px !important;
+    --tab-min-height: 24px !important;
 }
 
 #urlbar,
@@ -22,8 +22,8 @@
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbarbutton,
 #main-window[uidensity=compact] #nav-bar #nav-bar-customization-target > toolbaritem,
 #PanelUI-menu-button {
-	margin-top: -4px !important;
-	margin-bottom: -4px !important;
+	margin-top: -2px !important;
+	margin-bottom: -2px !important;
 	padding-top: -2px !important;
 	padding-bottom: -2px !important;
 	max-height: 28px !important;
@@ -55,12 +55,14 @@
     overflow-y: auto !important;
     min-height: var(--tab-min-height); /* default */
     max-height: calc(5*var(--tab-min-height)) !important;
+
 }
 #tabbrowser-tabs .tabbrowser-tab:not([pinned]) {
     flex-grow: 1;
     flex-wrap:wrap;
     min-width: 150px;
     vertical-align: bottom !important;
+
 }
 #tabbrowser-tabs .tabbrowser-tab,
 #tabbrowser-tabs .tabbrowser-tab .tab-stack .tab-background {
